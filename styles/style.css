@@ -404,6 +404,9 @@ footer ul{
     .header_text_p{
 
     }
+    .our_story_div button{
+        top: -10px;
+    }
     #story-1{
         display: none;
     }
