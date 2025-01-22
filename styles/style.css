@@ -245,7 +245,66 @@ ul{
     font-weight: 500;
 }
 
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(1, 172, 253);
+    padding: 5% 10%;
+    color: white;
+    column-gap: ;
 
+}
+.footer_dives{
+    display: flex;
+    flex-direction: column;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -3vw;
+    gap: 8px;
+    
+
+}
+.footer_li{
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.footer_logo img{
+    height: 5.5rem;
+}
+.footer_dives img{
+    font-size: 1rem;
+    width: 5rem;
+    padding-bottom: 1rem;
+   
+
+}
+#logo_id_div{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: 40px;
+}
+    
+.social_icon{
+    flex-direction: row;
+    gap: 0px;
+    margin-left: -20px;
+    
+}
+.social_icon img{
+    width:2rem;
+}
 
 @media screen and (max-width:576px) {
     .visibility{
@@ -303,8 +362,7 @@ ul{
         flex-direction: column;
     }
     .card{
-        /* width: 100%; */
-        /* margin-left: 20px; */
+       
         padding: 5px;
         
     }
@@ -316,21 +374,14 @@ ul{
     /* Our story */
 
     .our_story_div{
-        
-        grid-template-columns: repeat(2,1fr);
-
-        /* gap: -30px; */
-        padding: 12px 0px;
-        padding-left: 0px;
-        padding-bottom: 12%;
-        gap: 0px;
-      
-        
+       /*  */
+        grid-template-columns: repeat(2,.5fr);
+        width: 390px;
     }
     .our_story_card{
-        width: 40%;
+        width: 45%;
         padding: 0px;
-        margin: px;
+        margin: 0px;
     }
     #story-1{
         display: none;
@@ -344,4 +395,27 @@ ul{
         font-size: 7px;
        
     }
-}    
+    footer{
+        grid-template-columns: 1fr;
+    }
+    #logo_id_div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-right: 4px;
+    }
+    footer li{
+        margin-left:-20px;
+        
+    }
+    .social_icon{
+        margin-top: 0px;
+        margin-left: 0px;
+        gap: 24px;
+        justify-content: left;
+    }
+}    footer p{
+    width: 100%;
+}
