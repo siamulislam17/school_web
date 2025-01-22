@@ -314,6 +314,9 @@ footer ul{
     color: orange;
     font-weight: 700;
 }
+.footer_li{
+    margin-left: 0px;
+}
 @media screen and (max-width:576px) {
     .visibility{
         display: none;
