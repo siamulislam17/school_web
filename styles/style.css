@@ -388,7 +388,9 @@ footer ul{
     .our_story_div{
        /*  */
         grid-template-columns: repeat(2,minmax(140px,1fr));
-        
+        align-items: center;
+        padding-right: 1rem;
+        padding-left: 3rem;
         
     }
     .our_story_card{
