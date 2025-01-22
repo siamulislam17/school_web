@@ -161,6 +161,92 @@ ul{
 }
 
 
+
+
+/* Our story */
+
+.our_story_sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-image: url(../assets/bg.png),linear-gradient(rgba(255, 255, 255, 0.3),rgba(254, 161, 1, 0.234));
+}
+.our_story_sec h1{
+    font-size: 3rem;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+.our_story_card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+
+
+}
+.our_story_card img{
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.our_story_div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5% 10%;
+    gap: 2%;
+}
+.our_story_div button{
+    font-weight: 500;
+    border-radius: 15px;
+    
+    padding: .6rem 1rem;
+    font-size: 12px;
+    border: none;
+    width: 11.7rem;
+    position: relative;
+    left: 1.4rem;
+    bottom: 1.30rem;
+    color: rgb(255, 255, 255);
+    
+
+}
+.story_button_div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    
+}
+.our_story_card h2{
+    font-size: .8rem;
+    padding-left: 8%;
+    margin-top: 0px;
+    padding-bottom: 2%;
+    padding-right: 8%;
+    font-weight: 700;
+}
+
+#story-1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+}
+#story-1 h2{
+    font-weight: 700;
+    font-size: 1.3rem;
+
+}
+#story-1 p{
+    font-size: .8rem;
+    padding-left: 8%;
+    font-size: 1rem;
+    color: rgb(102, 102, 102);
+    padding-right: 8%;
+    font-weight: 500;
+}
+
+
+
 @media screen and (max-width:576px) {
     .visibility{
         display: none;
@@ -217,11 +303,45 @@ ul{
         flex-direction: column;
     }
     .card{
-        width: 100%;
-        margin-left: -10px;
+        /* width: 100%; */
+        /* margin-left: 20px; */
+        padding: 5px;
         
     }
     .arrow_btn{
-        visibility: hidden;
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+    /* Our story */
+
+    .our_story_div{
+        
+        grid-template-columns: repeat(2,1fr);
+
+        /* gap: -30px; */
+        padding: 12px 0px;
+        padding-left: 0px;
+        padding-bottom: 12%;
+        gap: 0px;
+      
+        
+    }
+    .our_story_card{
+        width: 40%;
+        padding: 0px;
+        margin: px;
+    }
+    #story-1{
+        display: none;
+    }
+    .story_button_div{
+        margin: 5%;
+    }
+    
+    .our_story_div button{
+        width: 6rem;
+        font-size: 7px;
+       
     }
 }    
